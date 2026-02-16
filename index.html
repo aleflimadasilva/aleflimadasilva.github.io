@@ -3,131 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alef Lima da Silva | Técnico em Eletrônica</title>
+<title>Alef Lima da Silva | Analista de Sistemas</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family:Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-    font-family:'Montserrat',sans-serif;
-    background:#f5f5f5;
-    color:#333;
-    line-height:1.6;
+    font-family:'Poppins',sans-serif;
+    background:#f2f4f8;
+    color:#222;
 }
 
-/* Container principal */
 .container{
-    max-width:1000px;
-    margin:auto;
+    max-width:1100px;
+    margin:60px auto;
     background:white;
-    padding:60px 50px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
-/* Header */
-.header{
+/* COLUNA ESQUERDA */
+.sidebar{
+    background:#111827;
+    color:white;
+    padding:50px 30px;
     text-align:center;
-    margin-bottom:50px;
 }
 
-.header img{
+.sidebar img{
     width:140px;
     height:140px;
     border-radius:50%;
     object-fit:cover;
     margin-bottom:20px;
+    border:3px solid #3b82f6;
 }
 
-.header h1{
-    font-size:34px;
-    font-weight:700;
-    margin-bottom:10px;
+.sidebar h1{
+    font-size:22px;
+    margin-bottom:5px;
 }
 
-.header h2{
-    font-size:18px;
-    font-weight:400;
-    color:#666;
-    margin-bottom:20px;
-}
-
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    border:1px solid #333;
-    text-decoration:none;
-    color:#333;
+.sidebar h2{
     font-size:14px;
-    transition:0.3s;
+    font-weight:300;
+    color:#9ca3af;
+    margin-bottom:30px;
 }
 
-.btn:hover{
-    background:#333;
-    color:white;
+.sidebar .section{
+    text-align:left;
+    margin-bottom:35px;
 }
 
-/* Seções */
-.section{
-    margin-bottom:45px;
-}
-
-.section h3{
-    font-size:18px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    margin-bottom:15px;
-    border-bottom:1px solid #ddd;
-    padding-bottom:8px;
-}
-
-.section p{
-    margin-bottom:10px;
-}
-
-/* Lista habilidades */
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.skill{
-    background:#eee;
-    padding:8px 14px;
+.sidebar h3{
     font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:10px;
+    color:#3b82f6;
 }
 
-/* Contato */
-.contact p{
+.sidebar p, .sidebar a{
+    font-size:13px;
     margin-bottom:8px;
-}
-
-.contact a{
-    color:#333;
+    color:#e5e7eb;
     text-decoration:none;
 }
 
-.contact a:hover{
+.sidebar a:hover{
     text-decoration:underline;
 }
 
-/* Footer */
-footer{
-    text-align:center;
-    font-size:13px;
-    color:#777;
-    margin-top:40px;
+.skill{
+    background:#1f2937;
+    padding:6px 10px;
+    margin:4px 4px 4px 0;
+    display:inline-block;
+    font-size:12px;
+    border-radius:4px;
 }
 
-@media(max-width:768px){
+/* COLUNA DIREITA */
+.content{
+    padding:60px 50px;
+}
+
+.content h3{
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:15px;
+    border-bottom:2px solid #eee;
+    padding-bottom:8px;
+}
+
+.content p{
+    margin-bottom:15px;
+    font-size:14px;
+    line-height:1.6;
+    color:#555;
+}
+
+.job{
+    margin-bottom:25px;
+}
+
+.job h4{
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.job span{
+    font-size:12px;
+    color:#777;
+}
+
+footer{
+    text-align:center;
+    font-size:12px;
+    color:#999;
+    padding:20px;
+}
+
+@media(max-width:900px){
     .container{
-        padding:40px 25px;
+        grid-template-columns:1fr;
+    }
+    .sidebar{
+        text-align:center;
     }
 }
 </style>
@@ -137,60 +146,87 @@ footer{
 
 <div class="container">
 
-<div class="header">
+<!-- COLUNA ESQUERDA -->
+<div class="sidebar">
+
 <img src="sua-foto.jpg" alt="Alef Lima da Silva">
+
 <h1>Alef Lima da Silva</h1>
-<h2>Técnico em Eletrônica</h2>
-<a href="curriculo.pdf" target="_blank" class="btn">
-<i class="fa-solid fa-file-pdf"></i> Baixar Currículo
-</a>
-</div>
+<h2>Analista de Sistemas | Tecnologia & Inovação</h2>
 
 <div class="section">
-<h3>Sobre Mim</h3>
-<p>Estudante de Técnico em Eletrônica com foco em tecnologia, automação e sistemas embarcados.</p>
-<p>Possuo experiência prática com microcontroladores como ESP32 e Arduino, desenvolvendo projetos acadêmicos voltados para inovação e aplicação técnica.</p>
-<p>Busco minha primeira oportunidade profissional para aplicar conhecimentos e crescer na área tecnológica.</p>
-</div>
-
-<div class="section">
-<h3>Formação</h3>
-<p><strong>Técnico em Eletrônica</strong> – Em andamento</p>
-</div>
-
-<div class="section">
-<h3>Projetos</h3>
-<p><strong>Projetos Acadêmicos:</strong> Desenvolvimento de circuitos e sistemas embarcados com ESP32 e Arduino.</p>
-<p><strong>Portfólio Web:</strong> Criação deste site utilizando HTML e CSS, publicado no GitHub.</p>
-</div>
-
-<div class="section">
-<h3>Habilidades</h3>
-<div class="skills">
-<span class="skill">ESP32</span>
-<span class="skill">Arduino</span>
-<span class="skill">Excel Avançado</span>
-<span class="skill">Word Avançado</span>
-<span class="skill">PowerPoint Avançado</span>
-<span class="skill">HTML & CSS</span>
-<span class="skill">Inglês Básico</span>
-<span class="skill">Espanhol Básico</span>
-</div>
-</div>
-
-<div class="section contact">
 <h3>Contato</h3>
 <p><i class="fa-solid fa-phone"></i> (11) 98493-0971</p>
-<p><i class="fa-solid fa-envelope"></i> <a href="mailto:aleflima.12@hotmail.com">aleflima.12@hotmail.com</a></p>
+<p><i class="fa-solid fa-envelope"></i> aleflima.12@hotmail.com</p>
 <p><i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a></p>
 <p><i class="fa-brands fa-github"></i> <a href="#">GitHub</a></p>
 </div>
 
-<footer>
-© 2026 Alef Lima da Silva
-</footer>
+<div class="section">
+<h3>Competências Técnicas</h3>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">Git</span>
+<span class="skill">Excel Avançado</span>
+<span class="skill">ESP32</span>
+<span class="skill">Arduino</span>
+</div>
+
+<div class="section">
+<h3>Idiomas</h3>
+<p>Inglês – Básico</p>
+<p>Espanhol – Básico</p>
+</div>
 
 </div>
+
+<!-- COLUNA DIREITA -->
+<div class="content">
+
+<h3>Perfil Profissional</h3>
+<p>
+Profissional em formação na área de Tecnologia da Informação, com foco em desenvolvimento web, sistemas e automação.
+Possuo base técnica em eletrônica e experiência prática com microcontroladores e projetos acadêmicos.
+</p>
+<p>
+Busco oportunidade como Analista de Sistemas Júnior ou área correlata, contribuindo com soluções eficientes, aprendizado contínuo e mentalidade orientada a resultados.
+</p>
+
+<h3>Experiência</h3>
+
+<div class="job">
+<h4>Projetos Acadêmicos em Tecnologia</h4>
+<span>Desenvolvimento e Aplicação Prática</span>
+<p>
+Desenvolvimento de sistemas embarcados utilizando ESP32 e Arduino.
+Criação de páginas web utilizando HTML e CSS.
+Controle de versões com Git e publicação no GitHub.
+</p>
+</div>
+
+<h3>Formação</h3>
+<div class="job">
+<h4>Técnico em Eletrônica</h4>
+<span>Em andamento</span>
+<p>
+Formação voltada para sistemas eletrônicos, lógica, automação e fundamentos de programação.
+</p>
+</div>
+
+<h3>Objetivo</h3>
+<p>
+Atuar na área de Tecnologia da Informação como Analista de Sistemas ou Desenvolvedor Júnior,
+aplicando conhecimentos técnicos e evoluindo continuamente em ambientes corporativos.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Alef Lima da Silva – Curriculum Vitae
+</footer>
 
 </body>
 </html>
