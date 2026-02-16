@@ -6,11 +6,8 @@
 <title>Alef Lima da Silva | Técnico em Eletrônica</title>
 
 <style>
-/* === Reset === */
-body, h1, h2, h3, p, ul, li, a, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body, h1, h2, p, ul, li, a, button {
+    margin: 0; padding: 0; box-sizing: border-box;
 }
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -19,7 +16,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* === Menu fixo === */
+/* Menu fixo */
 nav {
     position: fixed;
     top: 0;
@@ -32,17 +29,10 @@ nav {
     gap: 30px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-nav a:hover {
-    color: #60a5fa;
-}
+nav a { color: #e2e8f0; text-decoration: none; font-weight: bold; transition: 0.3s; }
+nav a:hover { color: #60a5fa; }
 
-/* === Header === */
+/* Header */
 header {
     text-align: center;
     padding: 140px 20px 60px 20px;
@@ -51,237 +41,6 @@ header {
     position: relative;
 }
 header img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid white;
-    margin-bottom: 20px;
-}
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-.subtitle {
-    font-size: 18px;
-    height: 25px;
-    margin-bottom: 20px;
-}
-
-/* === Botão PDF === */
-button {
-    background: #2563eb;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: 0.3s;
-}
-button:hover {
-    background: #1d4ed8;
-}
-
-/* === Seções === */
-section {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 20px;
-    animation: fadeUp 1.2s ease;
-}
-h2 {
-    border-left: 4px solid #2563eb;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    font-size: 22px;
-}
-.card {
-    background: #1e2d55;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 25px rgba(0,0,0,0.5);
-}
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.skill {
-    background: #2563eb;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-}
-a {
-    color: #60a5fa;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* === Footer === */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e2d55;
-    margin-top: 40px;
-}
-
-/* === Lang switch === */
-.lang-switch {
-    position: fixed;
-    top: 15px;
-    right: 20px;
-    z-index: 101;
-}
-
-/* === Animações === */
-@keyframes fadeIn {
-    from {opacity:0;}
-    to {opacity:1;}
-}
-@keyframes fadeUp {
-    from {opacity:0; transform:translateY(30px);}
-    to {opacity:1; transform:translateY(0);}
-}
-
-@media(max-width:600px){
-    h1{font-size:28px;}
-    h2{font-size:20px;}
-    nav {flex-direction: column; gap:15px;}
-}
-</style>
-</head>
-
-<body>
-
-<!-- === Menu fixo === -->
-<nav>
-    <a href="#about-title">Sobre / About</a>
-    <a href="#experience-title">Experiência / Experience</a>
-    <a href="#projects-title">Projetos / Projects</a>
-    <a href="#skills-title">Habilidades / Skills</a>
-    <a href="#contact-title">Contato / Contact</a>
-</nav>
-
-<div class="lang-switch">
-    <button onclick="toggleLang()">PT / EN</button>
-</div>
-
-<header>
-    <img src="sua-foto.jpg" alt="Alef Lima da Silva">
-    <h1>Alef Lima da Silva</h1>
-    <div class="subtitle" id="typing"></div>
-    <button onclick="downloadPDF()">Baixar Currículo (PDF)</button>
-</header>
-
-<section>
-
-<h2 id="about-title">Sobre Mim</h2>
-<div class="card" id="about-text">
-Sou estudante do curso Técnico em Eletrônica, apaixonado por tecnologia e inovação.
-Atualmente em São Paulo em busca de crescimento profissional e oportunidades na área técnica.
-</div>
-
-<h2 id="experience-title">Experiência</h2>
-<div class="card" id="experience-text">
-<p>Em busca da primeira oportunidade profissional, focado em desenvolvimento de habilidades técnicas e acadêmicas.</p>
-</div>
-
-<h2 id="projects-title">Projetos</h2>
-<div class="card" id="projects-text">
-<ul>
-<li>Projetos acadêmicos em Eletrônica</li>
-<li>Estudos práticos com microcontroladores (ESP32/Arduino)</li>
-<li>Desenvolvimento de páginas web simples</li>
-</ul>
-</div>
-
-<h2 id="skills-title">Habilidades</h2>
-<div class="card skills" id="skills-text">
-<span class="skill">Excel Avançado</span>
-<span class="skill">Word Avançado</span>
-<span class="skill">PowerPoint Avançado</span>
-<span class="skill">Inglês Básico</span>
-<span class="skill">Espanhol Básico</span>
-<span class="skill">Adobe Básico</span>
-</div>
-
-<h2 id="contact-title">Contato</h2>
-<div class="card" id="contact-text">
-<p>📞 (11) 98493-0971</p>
-<p>✉️ <a href="mailto:aleflima.12@hotmail.com">aleflima.12@hotmail.com</a></p>
-<p>💼 <a href="#">LinkedIn</a></p>
-<p>💻 <a href="#">GitHub</a></p>
-</div>
-
-</section>
-
-<footer>
-© 2026 Alef Lima da Silva
-</footer>
-
-<script>
-// === Efeito digitando ===
-const text = ["Técnico em Eletrônica", "Apaixonado por Tecnologia", "Futuro Especialista em Inovação"];
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type(){
-    if(count === text.length) count = 0;
-    currentText = text[count];
-    letter = currentText.slice(0, ++index);
-    document.getElementById("typing").textContent = letter;
-    if(letter.length === currentText.length){
-        count++;
-        index = 0;
-        setTimeout(type, 1500);
-    } else {
-        setTimeout(type, 80);
-    }
-})();
-
-// === Alternar idioma PT/EN ===
-let lang = "pt";
-function toggleLang(){
-    if(lang === "pt"){
-        document.getElementById("about-title").innerText = "About Me";
-        document.getElementById("about-text").innerText = "Electronics Technician student passionate about technology and innovation. Currently in São Paulo seeking professional growth and opportunities in the technical field.";
-        document.getElementById("experience-title").innerText = "Experience";
-        document.getElementById("experience-text").innerText = "Looking for the first professional opportunity, focused on developing technical and academic skills.";
-        document.getElementById("projects-title").innerText = "Projects";
-        document.getElementById("projects-text").innerHTML = "<ul><li>Academic electronics projects</li><li>Practical studies with microcontrollers (ESP32/Arduino)</li><li>Simple web page development</li></ul>";
-        document.getElementById("skills-title").innerText = "Skills";
-        document.getElementById("contact-title").innerText = "Contact";
-        lang = "en";
-    } else {
-        document.getElementById("about-title").innerText = "Sobre Mim";
-        document.getElementById("about-text").innerText = "Sou estudante do curso Técnico em Eletrônica, apaixonado por tecnologia e inovação. Atualmente em São Paulo em busca de crescimento profissional e oportunidades na área técnica.";
-        document.getElementById("experience-title").innerText = "Experiência";
-        document.getElementById("experience-text").innerText = "Em busca da primeira oportunidade profissional, focado em desenvolvimento de habilidades técnicas e acadêmicas.";
-        document.getElementById("projects-title").innerText = "Projetos";
-        document.getElementById("projects-text").innerHTML = "<ul><li>Projetos acadêmicos em Eletrônica</li><li>Estudos práticos com microcontroladores (ESP32/Arduino)</li><li>Desenvolvimento de páginas web simples</li></ul>";
-        document.getElementById("skills-title").innerText = "Habilidades";
-        document.getElementById("contact-title").innerText = "Contato";
-        lang = "pt";
-    }
-}
-
-// === Botão PDF ===
-function downloadPDF(){
-    window.open("curriculo.pdf", "_blank");
-}
-</script>
-
-</body>
-</html>
+    width: 160px; height: 160px;
+    border-radius: 50%; object-fit: cover;
+    border: 4px solid white; margin-bottom
