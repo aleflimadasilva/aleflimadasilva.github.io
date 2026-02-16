@@ -1,109 +1,196 @@
-<!-- COLUNA ESQUERDA -->
-<div class="sidebar">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alef Lima da Silva | Técnico em Eletrônica</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Container principal */
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:60px 50px;
+}
+
+/* Header */
+.header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.header img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.header h1{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.header h2{
+    font-size:18px;
+    font-weight:400;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    border:1px solid #333;
+    text-decoration:none;
+    color:#333;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#333;
+    color:white;
+}
+
+/* Seções */
+.section{
+    margin-bottom:45px;
+}
+
+.section h3{
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:8px;
+}
+
+.section p{
+    margin-bottom:10px;
+}
+
+/* Lista habilidades */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#eee;
+    padding:8px 14px;
+    font-size:13px;
+}
+
+/* Contato */
+.contact p{
+    margin-bottom:8px;
+}
+
+.contact a{
+    color:#333;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    font-size:13px;
+    color:#777;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .container{
+        padding:40px 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
 <img src="sua-foto.jpg" alt="Alef Lima da Silva">
-
 <h1>Alef Lima da Silva</h1>
-<h2>Analista de Sistemas em Formação<br>Background Técnico em Eletrônica</h2>
+<h2>Técnico em Eletrônica</h2>
+<a href="curriculo.pdf" target="_blank" class="btn">
+<i class="fa-solid fa-file-pdf"></i> Baixar Currículo
+</a>
+</div>
 
 <div class="section">
+<h3>Sobre Mim</h3>
+<p>Estudante de Técnico em Eletrônica com foco em tecnologia, automação e sistemas embarcados.</p>
+<p>Possuo experiência prática com microcontroladores como ESP32 e Arduino, desenvolvendo projetos acadêmicos voltados para inovação e aplicação técnica.</p>
+<p>Busco minha primeira oportunidade profissional para aplicar conhecimentos e crescer na área tecnológica.</p>
+</div>
+
+<div class="section">
+<h3>Formação</h3>
+<p><strong>Técnico em Eletrônica</strong> – Em andamento</p>
+</div>
+
+<div class="section">
+<h3>Projetos</h3>
+<p><strong>Projetos Acadêmicos:</strong> Desenvolvimento de circuitos e sistemas embarcados com ESP32 e Arduino.</p>
+<p><strong>Portfólio Web:</strong> Criação deste site utilizando HTML e CSS, publicado no GitHub.</p>
+</div>
+
+<div class="section">
+<h3>Habilidades</h3>
+<div class="skills">
+<span class="skill">ESP32</span>
+<span class="skill">Arduino</span>
+<span class="skill">Excel Avançado</span>
+<span class="skill">Word Avançado</span>
+<span class="skill">PowerPoint Avançado</span>
+<span class="skill">HTML & CSS</span>
+<span class="skill">Inglês Básico</span>
+<span class="skill">Espanhol Básico</span>
+</div>
+</div>
+
+<div class="section contact">
 <h3>Contato</h3>
 <p><i class="fa-solid fa-phone"></i> (11) 98493-0971</p>
-<p><i class="fa-solid fa-envelope"></i> aleflima.12@hotmail.com</p>
+<p><i class="fa-solid fa-envelope"></i> <a href="mailto:aleflima.12@hotmail.com">aleflima.12@hotmail.com</a></p>
 <p><i class="fa-brands fa-linkedin"></i> <a href="#">LinkedIn</a></p>
 <p><i class="fa-brands fa-github"></i> <a href="#">GitHub</a></p>
 </div>
 
-<div class="section">
-<h3>Competências Técnicas</h3>
-<span class="skill">HTML</span>
-<span class="skill">CSS</span>
-<span class="skill">JavaScript (em evolução)</span>
-<span class="skill">Git / GitHub</span>
-<span class="skill">Lógica de Programação</span>
-<span class="skill">Excel Avançado</span>
-<span class="skill">Diagnóstico Técnico</span>
-<span class="skill">Análise de Problemas</span>
-<span class="skill">ESP32 / Arduino</span>
-</div>
-
-<div class="section">
-<h3>Idiomas</h3>
-<p>Inglês – Básico</p>
-</div>
+<footer>
+© 2026 Alef Lima da Silva
+</footer>
 
 </div>
 
-<!-- COLUNA DIREITA -->
-<div class="content">
-
-<h3>Perfil Profissional</h3>
-<p>
-Profissional com sólida experiência como Técnico em Eletrônica, atuando em calibração,
-manutenção e análise de equipamentos eletrônicos de alta precisão em nível nacional.
-</p>
-
-<p>
-Atualmente em transição estratégica para a área de Tecnologia da Informação,
-cursando Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento,
-estruturação de sistemas e lógica de programação.
-</p>
-
-<p>
-Combino visão analítica, experiência prática em resolução de problemas complexos
-e capacidade técnica para atuar em ambientes que integrem hardware e software.
-</p>
-
-<h3>Experiência Profissional</h3>
-
-<div class="job">
-<h4>Técnico em Eletrônica – YORGOS</h4>
-<span>04/2023 – 09/2024</span>
-<p>
-Calibração e manutenção de equipamentos de detecção de gases e analisadores.
-Diagnóstico técnico, análise de falhas e aplicação de soluções corretivas.
-Atuação com documentação técnica e controle de qualidade.
-</p>
-</div>
-
-<div class="job">
-<h4>Técnico em Eletrônica – Telematica Sistemas Inteligentes</h4>
-<span>06/2022 – 04/2023</span>
-<p>
-Manutenção de placas SMD, elaboração de orçamentos técnicos
-e suporte técnico especializado.
-</p>
-</div>
-
-<div class="job">
-<h4>Experiência Técnica Anterior</h4>
-<span>2013 – 2022</span>
-<p>
-Atuação em suporte técnico, manutenção de equipamentos e atendimento ao cliente.
-Desenvolvimento de habilidades analíticas, organização de processos e solução estruturada de problemas.
-</p>
-</div>
-
-<h3>Formação Acadêmica</h3>
-
-<div class="job">
-<h4>Análise e Desenvolvimento de Sistemas</h4>
-<span>Estácio – 05/2025 (Cursando)</span>
-<p>
-Formação voltada para desenvolvimento de software, banco de dados,
-estruturação de sistemas e fundamentos de programação.
-</p>
-</div>
-
-<div class="job">
-<h4>Técnico em Eletrônica</h4>
-<span>ETEC Horácio Augusto da Silveira – Concluído</span>
-</div>
-
-<h3>Objetivo</h3>
-<p>
-Atuar na área de Tecnologia da Informação como Analista de Sistemas ou Desenvolvedor Júnior,
-integrando experiência técnica em eletrônica com desenvolvimento de software.
-</p>
-
-</div>
+</body>
+</html>
